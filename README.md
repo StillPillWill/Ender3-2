@@ -12,7 +12,7 @@ A custom large-format FDM 3D printer built from two dead Ender 3s. Extended both
 
 ## How It Works
 
-Cartesian (bed slinger) design. The Y-axis moves the entire bed on dual lead screws (wired parallel) with dual motors (wired series). The X-axis gantry rides on extended 4040 extrusion. Custom firmware on an STM32F103RC handles the non-standard bed size and BLTouch probing.
+Cartesian (bed slinger) design. The Y-axis moves the entire bed on dual lead screws (wired parallel) with dual motors (wired series). The X-axis gantry rides on extended 4040 extrusion. Custom firmware on the Creality 4.2.2 board handles the non-standard bed size and BLTouch probing.
 
 ## Why I Made It
 
@@ -26,7 +26,7 @@ I had two broken Ender 3s and didn't want to just throw them away. I figured if 
 | **Frame** | 3× 4040 aluminum extrusion, double-sided screw joints |
 | **Bed** | Plywood reinforced with scrap metal, steel surface |
 | **Bed leveling** | Custom firmware, 12×18 probe mesh |
-| **Controller** | STM32F103RC |
+| **Controller** | Creality 4.2.2 (from Ender 3 V2) |
 | **Probe** | BLTouch (X=-41.5, Y=-7) |
 | **Y-axis** | Dual lead screws, dual motors |
 | **Total cost** | ~$16 (only belt + plywood purchased) |
