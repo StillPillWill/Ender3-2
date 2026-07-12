@@ -2,7 +2,7 @@
 
 ## June 18: Dismantling and Frame Drilling
 
-I started by completely dismantling both printers. Then I used a bolt cutter to create a double-sided screw and used that to join together 3 pieces of 4040. Then I drilled the new mounting holes in this piece of 4040 and assembled the Y-axis.
+I started by completely dismantling both printers. Then I used a bolt cutter to create a double-sided screw and used that to join together 3 pieces of 4040 taken from the base of the printers. Then I drilled new mounting holes in this long 4040 piece and assembled the Y-axis.
 
 <img src="photos/img_0391.jpg" width="500" alt="Drilling into aluminum extrusion">
 
@@ -12,7 +12,7 @@ I started by completely dismantling both printers. Then I used a bolt cutter to 
 
 <img src="photos/img_0393.jpg" width="500" alt="Partially assembled frame">
 
-**Time spent this session: 8 hours**
+**Time spent this session: 9 hours**
 
 ---
 
@@ -20,7 +20,7 @@ I started by completely dismantling both printers. Then I used a bolt cutter to 
 
 Y-axis next to normal-sized print bed.
 
-Originally, I only wanted to extend the y-axis, but then I realized I don't feel like ever doing this again, so I decided to also extend the x-axis with the same double-sided screw trick. And I figured it would be a waste if I didn't also use two lead screws since I had them. Those were wired in parallel.
+Originally, I only wanted to extend the y-axis, but then I realized It's go big or go home, so I decided to also extend the x-axis with the same double-sided screw trick. And I figured it would be a waste if I didn't also use two lead screws since I had them. Those were wired in parallel.
 
 <img src="photos/img_0394.jpg" width="500" alt="Printer frame mid-assembly">
 
@@ -38,7 +38,6 @@ Here you can see the v1:
 
 <img src="photos/img_0405.jpg" width="500" alt="V1 powered on for first time">
 
-Now came the wiring. I had to figure out how to connect two motors on the y-axis and wire them in series to regulate current.
 
 <img src="photos/img_0406.jpg" width="500" alt="Exposed electronics and wiring">
 
@@ -64,9 +63,10 @@ Now came the wiring. I had to figure out how to connect two motors on the y-axis
 
 ---
 
-## July 9: The Bed
+## July 1-9: The Bed
 
-Now came the actual hard part: making a bed that big. Originally my idea was to take a basketball backboard and put some aluminum over it, but that was nowhere near level enough or stable enough to actually be used, so I ended up ditching it for a piece of plywood reinforced with some scrap metal I found on the side of the road.
+Now came the actual hard part: making a bed that big. Originally my idea was to take a basketball backboard and put some aluminum over it, but that was nowhere near level enough or stable enough to actually be used. I tried reinforcing it with epoxy and a couple other ideas, but none of them really worked well enough.
+So I ended up ditching it for a piece of plywood reinforced with some scrap metal I found on the side of the road. The compromise with this is that it's prone to warping, is heavier, and also can't be heated. I tried several alternatives during this time, but this was the cheapest option I could find.
 
 <img src="photos/img_0468.jpg" width="500" alt="Cutting materials for the bed">
 
@@ -76,15 +76,15 @@ I also added some supports on either end of the y-axis to help it not tilt. And 
 
 <img src="photos/img_0471.jpg" width="500" alt="Underside of bed with supports">
 
-It was during this time I also added a second motor on the y-axis to help it move such a large bed, wiring them in series to regulate current.
+It was during this time that I also added a second motor on the y-axis to help it move such a large bed, wiring them in series to regulate current. This took so much longer than I would have thought, as the Ender 3 uses its own special wiring, so I was following the wrong diagrams for several hours.
 
-**Time spent this session: 10 hours**
+**Time spent this session: 14 hours**
 
 ---
 
 ## July 10–11: Firmware
 
-Now came another very difficult step: writing custom firmware. This took me several days to get the bed leveling working, but I finally figured it out. It uses a **12×18 probe point arrangement**.
+Now came another very difficult step: writing custom firmware. This took me forever to get the bed leveling working, as first off, 12x18 is a non-square probe arrangement and is bordering on the limits of the controller, and second, there were a lot of hidden things inside of the firmware that override the settings I put. I also have it probe the board concentricity, as that lets you catch errors early, as probing takes quite a while at this scale. But I finally figured it out. It uses a **12×18 probe point arrangement**.
 
 <img src="photos/img_0476.jpg" width="500" alt="Top-down view of printer on bed">
 
@@ -114,4 +114,4 @@ Between the clearance holes cut for screws and the gaps between the pieces of 40
 
 The Z-axis got cut down because the bed is thicker than the original.
 
-**Time spent this session: 18 hours**
+**Time spent this session: 15 hours**
