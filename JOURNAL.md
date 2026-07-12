@@ -12,7 +12,7 @@ I started by completely dismantling both printers. Then I used a bolt cutter to 
 
 <img src="photos/img_0393.jpg" width="500" alt="Partially assembled frame">
 
-**Time spent this session: 5 hours**
+**Time spent this session: 8 hours**
 
 ---
 
@@ -28,7 +28,7 @@ Originally, I only wanted to extend the y-axis, but then I realized I don't feel
 
 <img src="photos/img_0396.jpg" width="500" alt="Top-down view of frame layout">
 
-**Time spent this session: 4 hours**
+**Time spent this session: 8 hours**
 
 ---
 
@@ -46,7 +46,7 @@ Now came the wiring. I had to figure out how to connect two motors on the y-axis
 
 <img src="photos/img_0408.jpg" width="500" alt="Near-complete with wiring">
 
-**Time spent this session: 4 hours**
+**Time spent this session: 8 hours**
 
 ---
 
@@ -60,7 +60,7 @@ Now came the wiring. I had to figure out how to connect two motors on the y-axis
 
 <img src="photos/img_0421.jpg" width="500" alt="Papers and planning">
 
-**Time spent this session: 3 hours**
+**Time spent this session: 10 hours**
 
 ---
 
@@ -78,11 +78,11 @@ I also added some supports on either end of the y-axis to help it not tilt. And 
 
 It was during this time I also added a second motor on the y-axis to help it move such a large bed, wiring them in series to regulate current.
 
-**Time spent this session: 5 hours**
+**Time spent this session: 10 hours**
 
 ---
 
-## July 10: Firmware and First Prints
+## July 10–11: Firmware
 
 Now came another very difficult step: writing custom firmware. This took me several days to get the bed leveling working, but I finally figured it out. It uses a **12×18 probe point arrangement**.
 
@@ -97,12 +97,6 @@ Here you can see the very first test print I did.
 📹 [First test print](videos/IMG_0472.MOV)
 
 <img src="photos/img_0478.jpg" width="500" alt="Printing a blue object">
-
-**Time spent this session: 6 hours**
-
----
-
-## July 11: Printing
 
 Between the clearance holes cut for screws and the gaps between the pieces of 4040, the y-axis is rather bumpy, and every time it crosses over a gap, it jumps a little, leading to some pretty bad artifacts on the prints. But I'm going to try to remedy those at a later time with some JB Weld.
 
@@ -120,4 +114,4 @@ Between the clearance holes cut for screws and the gaps between the pieces of 40
 
 The Z-axis got cut down because the bed is thicker than the original.
 
-**Time spent this session: 6 hours**
+**Time spent this session: 18 hours**
