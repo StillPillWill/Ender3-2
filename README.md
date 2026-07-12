@@ -30,6 +30,7 @@ I had two broken Ender 3s and didn't want to just throw them away. I figured if 
 | **Probe** | BLTouch (X=-41.5, Y=-7) |
 | **Y-axis** | Dual lead screws, dual motors |
 | **Total cost** | ~$16 (only belt + plywood purchased) |
+| **Build time** | 33 hours |
 
 ## CAD
 
