@@ -1,8 +1,10 @@
-Part,Quantity,Source,Cost,Notes
-4040 aluminum extrusion,3,Harbor Freight,$45,"Frame extension - only new structural part"
-Belts (GT2),2,Amazon,$12,"Replacement belts for extended axes"
-Plywood sheet (3/4"),1,Hardware store,$18,"Bed base"
-Steel support rails,2,Road find,$0,"Bed reinforcement - scavenged"
-Bolts/hardware,1,Hardware store,$8,"Assorted M5/M8 for frame joints"
-JB Weld,1,Hardware store,$6,"For filling Y-axis gaps later"
-,,"Total:",$89,
+Part,Qty,Price,Link,Notes
+GT2 Open Timing Belt 6mm 5m,1,$8.99,https://www.amazon.com/dp/B0CHQ8RVWY,"Pangyoo PU steel-core, select 5m/6mm"
+4040 V-Slot Extrusion 500mm,3,$25.99,https://www.amazon.com/dp/B0CCS8S9HK,"4-pack ~$26, need 3 — or get singles on eBay ~$8ea"
+3/4 Plywood 4x8 sheet,1,$28.00,https://www.homedepot.com/b/Lumber-Composites-Plywood/3-4/4-ft-x-8-ft/N-5yc1vZbqm7Z1z0mcq7Z1z1a6x9,"Cheapest at Home Depot — BCX grade"
+JB Weld Original 2oz,1,$5.98,https://www.amazon.com/dp/B0006O1ICE,"For filling Y-axis gaps"
+M5/M6/M8 Bolt Assortment Kit,1,$9.99,https://www.amazon.com/dp/B0DW41XVM2,"448-piece stainless, covers all frame joints"
+,,,,,
+,,,,"Total: ~$79"
+,,,,
+,,,,"Everything else (motors, lead screws, controller, BLTouch, wiring, fans) reused from 2x Ender 3 donors"
