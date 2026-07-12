@@ -23,7 +23,7 @@ I started by completely dismantling both printers. Then I used a bolt cutter to 
 <br><em>Partially assembled frame</em>
 </div>
 
-> ⏱ **9 hours**
+> **Time: 9 hours**
 
 ---
 
@@ -48,7 +48,7 @@ Originally, I only wanted to extend the y-axis, but then I realized It's go big 
 <br><em>Top-down view of frame layout</em>
 </div>
 
-> ⏱ **8 hours**
+> **Time: 8 hours**
 
 ---
 
@@ -76,7 +76,7 @@ Here you can see the v1:
 <br><em>Near-complete with wiring</em>
 </div>
 
-> ⏱ **8 hours**
+> **Time: 8 hours**
 
 ---
 
@@ -102,7 +102,7 @@ Here you can see the v1:
 <br><em>Papers and planning</em>
 </div>
 
-> ⏱ **10 hours**
+> **Time: 10 hours**
 
 ---
 
@@ -131,7 +131,7 @@ I also added some supports on either end of the y-axis to help it not tilt. And 
 
 It was during this time that I also added a second motor on the y-axis to help it move such a large bed, wiring them in series to regulate current. This took so much longer than I would have thought, as the Ender 3 uses its own special wiring, so I was following the wrong diagrams for several hours.
 
-> ⏱ **14 hours**
+> **Time: 14 hours**
 
 ---
 
@@ -149,11 +149,11 @@ Now came another very difficult step: writing custom firmware. This took me fore
 <br><em>Printer setup with blue tape</em>
 </div>
 
-📹 [Building the frame](videos/IMG_0404.MOV)
+[Building the frame](videos/IMG_0404.MOV)
 
 Here you can see the very first test print I did.
 
-📹 [First test print](videos/IMG_0472.MOV)
+[First test print](videos/IMG_0472.MOV)
 
 <div align="center">
 <img src="photos/img_0478.jpg" width="500" alt="Printing a blue object">
@@ -167,17 +167,17 @@ Between the clearance holes cut for screws and the gaps between the pieces of 40
 <br><em>Printing from above</em>
 </div>
 
-📹 [Printing](videos/IMG_0479.MOV) · [More printing](videos/IMG_0481.MOV)
+[Printing](videos/IMG_0479.MOV) · [More printing](videos/IMG_0481.MOV)
 
 <div align="center">
 <img src="photos/img_0482.jpg" width="500" alt="Printing a boat model">
 <br><em>Printing a Benchy</em>
 </div>
 
-📹 [Final result](videos/IMG_0483.MOV)
+[Final result](videos/IMG_0483.MOV)
 
 **Final build volume: 585mm (X) × 775mm (Y) × 230mm (Z)**
 
 The Z-axis got cut down because the bed is thicker than the original.
 
-> ⏱ **15 hours**
+> **Time: 15 hours**
