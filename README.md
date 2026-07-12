@@ -16,7 +16,7 @@ Cartesian (bed slinger) design. The Y-axis moves the entire bed on dual lead scr
 
 ## Why I Made It
 
-I had two broken Ender 3s and didn't want to just throw them away. I figured if I'm going to rebuild one, I might as well make it absurdly big. The goal was maximum build volume on a zero-dollar budget.
+I had two broken Ender 3s and didn't want to just throw them away. I figured if I'm going to rebuild one, I might as well make it absurdly big. The goal was maximum build volume on a zero-dollar budget — almost everything was reused from the donor printers.
 
 ## Specs
 
@@ -24,19 +24,20 @@ I had two broken Ender 3s and didn't want to just throw them away. I figured if 
 |---|---|
 | **Build volume** | 585mm (X) × 775mm (Y) × 230mm (Z) |
 | **Frame** | 3× 4040 aluminum extrusion, double-sided screw joints |
-| **Bed** | Plywood + scrap metal reinforcement, steel surface |
+| **Bed** | Plywood reinforced with scrap metal, steel surface |
 | **Bed leveling** | Custom firmware, 12×18 probe mesh |
 | **Controller** | STM32F103RC |
 | **Probe** | BLTouch (X=-41.5, Y=-7) |
 | **Y-axis** | Dual lead screws, dual motors |
+| **Total cost** | ~$89 (almost everything reused) |
 
 ## CAD
 
-Full STEP files are in the [`CAD/`](CAD/) folder.
+Full STEP files in [`CAD/`](CAD/).
 
 ## BOM
 
-See [`BOM.csv`](BOM.csv) for the full parts list.
+See [`BOM.csv`](BOM.csv) — only belts, plywood, rails, and hardware were purchased. Everything else came from the two donor Ender 3s.
 
 ## Build Photos
 
@@ -46,8 +47,8 @@ See [`BOM.csv`](BOM.csv) for the full parts list.
 
 ## Videos
 
-[Building the frame](IMG_0404.MOV) · [First test print](IMG_0472.MOV) · [Printing](IMG_0479.MOV) · [More printing](IMG_0481.MOV) · [Final result](IMG_0483.MOV)
+[Building the frame](videos/IMG_0404.MOV) · [First test print](videos/IMG_0472.MOV) · [Printing](videos/IMG_0479.MOV) · [More printing](videos/IMG_0481.MOV) · [Final result](videos/IMG_0483.MOV)
 
 ## Journal
 
-See [`JOURNAL.md`](JOURNAL.md) for the full build journal with detailed photos and process notes.
+See [`JOURNAL.md`](JOURNAL.md) for the full build log with dated entries and timestamps.
