@@ -2,11 +2,21 @@
 
 > What if you took an Ender 3, and squared it.
 
-Two Ender 3 printers dismantled and merged into one large-format Cartesian printer.
+Two Ender 3 printers dismantled and merged into one large-format Cartesian 3D printer with a **585 × 775 × 230mm** build volume.
 
-**585 × 775 × 230mm** build volume.
+<img src="photos/img_0482.jpg" width="600" alt="Ender3-2 printing a boat">
 
-<img src="journal/01-build/photos/img_0482.jpg" width="600" alt="Ender3-2 printing a boat">
+## What It Does
+
+A custom large-format FDM 3D printer built from two dead Ender 3s. Extended both axes with 4040 aluminum extrusion, built a massive bed from plywood and road-found scrap metal, wrote custom firmware with a 12×18 probe mesh for bed leveling.
+
+## How It Works
+
+Cartesian (bed slinger) design. The Y-axis moves the entire bed on dual lead screws (wired parallel) with dual motors (wired series). The X-axis gantry rides on extended 4040 extrusion. Custom firmware on an STM32F103RC handles the non-standard bed size and BLTouch probing.
+
+## Why I Made It
+
+I had two broken Ender 3s and didn't want to just throw them away. I figured if I'm going to rebuild one, I might as well make it absurdly big. The goal was maximum build volume on a zero-dollar budget.
 
 ## Specs
 
@@ -14,20 +24,30 @@ Two Ender 3 printers dismantled and merged into one large-format Cartesian print
 |---|---|
 | **Build volume** | 585mm (X) × 775mm (Y) × 230mm (Z) |
 | **Frame** | 3× 4040 aluminum extrusion, double-sided screw joints |
-| **Bed** | Plywood reinforced with scrap metal, steel surface |
+| **Bed** | Plywood + scrap metal reinforcement, steel surface |
 | **Bed leveling** | Custom firmware, 12×18 probe mesh |
 | **Controller** | STM32F103RC |
 | **Probe** | BLTouch (X=-41.5, Y=-7) |
 | **Y-axis** | Dual lead screws, dual motors |
 
-## The Build
+## CAD
 
-Started with a bolt cutter and two dead Ender 3s. Extended both axes with 4040 extrusion, built a massive bed from plywood and road-found scrap metal, wrote custom firmware to level it, and somehow it works.
+Full STEP files are in the [`CAD/`](CAD/) folder.
 
-<img src="journal/01-build/photos/img_0478.jpg" width="600" alt="Ender3-2 printing">
+## BOM
 
-[Full build journal →](journal/01-build/build.md)
+See [`BOM.csv`](BOM.csv) for the full parts list.
+
+## Build Photos
+
+<img src="photos/img_0478.jpg" width="400" alt="Printing">
+<img src="photos/img_0482.jpg" width="400" alt="Printing a boat">
+<img src="photos/img_0476.jpg" width="400" alt="Full setup">
 
 ## Videos
 
-[Building the frame](journal/01-build/IMG_0404.MOV) · [First test print](journal/01-build/IMG_0472.MOV) · [Printing](journal/01-build/IMG_0479.MOV) · [More printing](journal/01-build/IMG_0481.MOV) · [Final result](journal/01-build/IMG_0483.MOV)
+[Building the frame](IMG_0404.MOV) · [First test print](IMG_0472.MOV) · [Printing](IMG_0479.MOV) · [More printing](IMG_0481.MOV) · [Final result](IMG_0483.MOV)
+
+## Journal
+
+See [`JOURNAL.md`](JOURNAL.md) for the full build journal with detailed photos and process notes.

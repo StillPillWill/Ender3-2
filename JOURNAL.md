@@ -1,6 +1,6 @@
-# Build Journal — Entry 01
+# Build Journal — Ender3-2
 
-## The Frame
+## July 10: The Frame
 
 I started by completely dismantling both printers. Then I used a bolt cutter to create a double-sided screw and used that to join together 3 pieces of 4040. Then I drilled the new mounting holes in this piece of 4040 and assembled the Y-axis.
 
@@ -26,21 +26,25 @@ Here you can see the v1:
 
 <img src="photos/img_0405.jpg" width="500" alt="V1 powered on for first time">
 
+**Time spent this session: 8 hours**
+
 ---
 
-## Wiring and Electronics
+## July 10: Wiring and Electronics
 
 Now came the wiring. I had to figure out how to connect two motors on the y-axis and wire them in series to regulate current.
 
 <img src="photos/img_0406.jpg" width="500" alt="Exposed electronics and wiring">
 
-<img src="photos/img_0407.jpg" width="500" alt="Wiring the control board">
+<img src="photos/img_047.jpg" width="500" alt="Wiring the control board">
 
 <img src="photos/img_0408.jpg" width="500" alt="Near-complete with wiring">
 
+**Time spent this session: 4 hours**
+
 ---
 
-## The Bed
+## July 11: The Bed
 
 Now came the actual hard part: making a bed that big. Originally my idea was to take a basketball backboard and put some aluminum over it, but that was nowhere near level enough or stable enough to actually be used, so I ended up ditching it for a piece of plywood reinforced with some scrap metal I found on the side of the road.
 
@@ -58,9 +62,11 @@ It was during this time I also added a second motor on the y-axis to help it mov
 
 <img src="photos/img_0476.jpg" width="500" alt="Top-down view of printer on bed">
 
+**Time spent this session: 6 hours**
+
 ---
 
-## Firmware
+## July 11: Firmware
 
 Now came another very difficult step: writing custom firmware. This took me several days to get the bed leveling working, but I finally figured it out. It uses a **12×18 probe point arrangement**.
 
@@ -89,3 +95,5 @@ Between the clearance holes cut for screws and the gaps between the pieces of 40
 **Final build volume: 585mm (X) × 775mm (Y) × 230mm (Z)**
 
 The Z-axis got cut down because the bed is thicker than the original.
+
+**Time spent this session: 12 hours**
