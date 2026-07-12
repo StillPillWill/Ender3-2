@@ -29,7 +29,7 @@ I had two broken Ender 3s and didn't want to just throw them away. I figured if 
 | **Controller** | STM32F103RC |
 | **Probe** | BLTouch (X=-41.5, Y=-7) |
 | **Y-axis** | Dual lead screws, dual motors |
-| **Total cost** | ~$89 (almost everything reused) |
+| **Total cost** | ~$16 (only belt + plywood purchased) |
 
 ## CAD
 
@@ -37,7 +37,7 @@ Full STEP files in [`CAD/`](CAD/).
 
 ## BOM
 
-See [`BOM.csv`](BOM.csv) — only belts, plywood, rails, and hardware were purchased. Everything else came from the two donor Ender 3s.
+See [`BOM.csv`](BOM.csv) — only bought belt and plywood (~$16 total). Everything else came from the two donor Ender 3s.
 
 ## Build Photos
 
