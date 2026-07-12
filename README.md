@@ -1,55 +1,38 @@
-# Building a Large-Format 3D Printer
+# Ender3-2
 
-I started by completely dismantling both printers. Then I used a bolt cutter to create a double-sided screw and used that to join together 3 pieces of 4040. Then I drilled the new mounting holes in this piece of 4040 and assembled the Y-axis.
+> What if you took an Ender 3, and squared it.
 
-<img src="drilling-aluminum-extrusion.jpg" alt="Drilling into aluminum extrusion with a drill press">
+Two Ender 3 printers dismantled and merged into one large-format Cartesian printer with a **585 × 775 × 230mm** build volume.
 
-*Drilling center holes*
+## Specs
 
-<img src="lead-screws-bracket.jpg" alt="Lead screws and bracket assembly">
+| Axis | Travel | Notes |
+|------|--------|-------|
+| X | 585mm | Extended with double-sided screw join on 4040 extrusion |
+| Y | 775mm | Dual lead screws (wired parallel), dual motors (wired series) |
+| Z | 230mm | Reduced from stock — thicker bed eats the clearance |
 
-Y-axis next to normal-sized print bed.
+- **Frame:** 3× 4040 aluminum extrusion, bolt-cutter double-sided screw joints
+- **Bed:** Plywood reinforced with scrap metal, steel plate surface
+- **Bed leveling:** Custom firmware, 12×18 probe mesh
+- **Controller:** STM32F103RC, BLTouch (X=-41.5 Y=-7 offset)
+- **Baud:** 115200
 
-Originally, I only wanted to extend the y-axis, but then I realized I don't feel like ever doing this again, so I decided to also extend the x-axis with the same double-sided screw trick. And I figured it would be a waste if I didn't also use two lead screws since I had them. Those were wired in parallel.
+## Build Journal
 
-Here you can see the v1:
+| Entry | Description |
+|-------|-------------|
+| [01 — The Build](journal/01-build/build.md) | Frame extension, bed construction, firmware, first prints |
 
-<img src="v1-printer-build.jpg" alt="V1 build of the modified printer">
+## Gallery
 
----
+<img src="journal/01-build/drilling-aluminum-extrusion.jpg" width="400" alt="Drilling aluminum extrusion">
+<img src="journal/01-build/v1-printer-build.jpg" width="400" alt="V1 build">
+<img src="journal/01-build/bed-sheet-metal.jpg" width="400" alt="Bed construction">
+<img src="journal/01-build/bed-plywood-supports.jpg" width="400" alt="Bed supports">
 
-Now came the actual hard part: making a bed that big. Originally my idea was to take a basketball backboard and put some aluminum over it, but that was nowhere near level enough or stable enough to actually be used, so I ended up ditching it for a piece of plywood reinforced with some scrap metal I found on the side of the road.
+## Videos
 
-<img src="bed-sheet-metal.jpg" alt="Sheet metal laid out on frame for bed construction">
-
-I also added some supports on either end of the y-axis to help it not tilt. And some pieces on the boundary between the 4040s to lock it in place.
-
-<img src="bed-plywood-supports.jpg" alt="Plywood bed with metal support rails">
-
-<img src="bed-base-assembly.jpg" alt="Assembling the bed base with casters">
-
-It was during this time I also added a second motor on the y-axis to help it move such a large bed, wiring them in series to regulate current.
-
----
-
-Now came another very difficult step: writing custom firmware. This took me several days to get the bed leveling working, but I finally figured it out. It uses a **12×18 probe point arrangement**.
-
-📹 **First test print:**
-
-[IMG_0472.MOV](IMG_0472.MOV)
-
-Here you can see the very first test print I did.
-
-📹 **Printing test:**
-
-[IMG_0479.MOV](IMG_0479.MOV)
-
-Between the clearance holes cut for screws and the gaps between the pieces of 4040, the y-axis is rather bumpy, and every time it crosses over a gap, it jumps a little, leading to some pretty bad artifacts on the prints. But I'm going to try to remedy those at a later time with some JB Weld.
-
-📹 **Final result:**
-
-[IMG_0483.MOV](IMG_0483.MOV)
-
-**Final build volume: 585mm (X) × 775mm (Y) × 230mm (Z)**
-
-The Z-axis got cut down because the bed is thicker than the original.
+- [First test print](journal/01-build/IMG_0472.MOV)
+- [Printing](journal/01-build/IMG_0479.MOV)
+- [Final result](journal/01-build/IMG_0483.MOV)
