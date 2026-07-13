@@ -1,4 +1,4 @@
-# Ender3-2
+# Ender3^2
 
 > What if you took an Ender 3, and squared it.
 
